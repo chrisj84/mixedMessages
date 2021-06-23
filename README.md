@@ -22,3 +22,4 @@ Using Javascript design random messages. The messages should be split into 3 par
     + ***Extra*** link the js file to the page and get the js file to alter the HTML
 *  Test code on node.js and chrome if extra steps are required. 
 
+##### *This is a project from the codecademey.com course - full stack development*
