@@ -9,6 +9,9 @@ Using Javascript design random messages. The messages should be split into 3 par
 * Version control needs to be used
 * Also may make a simple HTML page for better user interface - but this would be extra to the project. 
 
+### Updates 
+ * Have started another branch *olive1*to try to redo the arrays
+
 #### To do list 
 
 * Create and matain a gitHub version control for this project. 
