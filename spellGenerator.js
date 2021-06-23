@@ -29,7 +29,7 @@ const getOutcome = () =>{
     return ranOutcome
 }
 
-function creatMessage () {
+function createMessage () {
     let chosenSpell = getSpell();
     let spellMod = 1;
     switch (chosenSpell){
@@ -57,11 +57,13 @@ function creatMessage () {
     let theOutCome = getOutcome();
     if (theOutCome === 'You have missed'){
         console.log (`${theOutCome}. The spell ${chosenSpell} did 0 damage to your enemy`)
+        document.getElementById("spell").innerHTML =`${theOutCome}. The spell ${chosenSpell} did 0 damage to your enemy`;
     }
     else {
         console.log (`${theOutCome}. The spell ${chosenSpell} did ${damageDone} damage.`)
+        document.getElementById("spell").innerHTML = `${theOutCome}. The spell ${chosenSpell} did ${damageDone} damage.`
 
     }
     
 }
-creatMessage();
+createMessage();
