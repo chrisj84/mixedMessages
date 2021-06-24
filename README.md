@@ -13,6 +13,7 @@ Using Javascript design random messages. The messages should be split into 3 par
  * Have started another branch *olive1*to try to redo the arrays
  * Have changed the subject of the messages from jokes to a dungeons and dragons theme. 
  * Have tested using node and is sucessfull, due to this will merge *olive1* branch to the master branch. 
+ * Completed basic HTML code and tested on Chrome. 
 
 #### To do list 
 
@@ -23,8 +24,8 @@ Using Javascript design random messages. The messages should be split into 3 par
     + Create a function which calls a radom index from each of the arrays :heavy_check_mark:
     + concatenate the results from the arrays into one string :heavy_check_mark:
     + log the string to the console :heavy_check_mark:
-    + ***Extra*** - set up a simple HTML page with a button.
-    + ***Extra*** link the js file to the page and get the js file to alter the HTML
-*  Test code on node.js and chrome if extra steps are required. 
+    + ***Extra*** - set up a simple HTML page with a button. :heavy_check_mark:
+    + ***Extra*** link the js file to the page and get the js file to alter the HTML :heavy_check_mark:
+*  Test code on node.js and chrome if extra steps are required.  :heavy_check_mark:
 
 ##### *This is a project from the codecademey.com course - full stack development*
