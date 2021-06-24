@@ -1,6 +1,6 @@
 const spells  = ['FireBolt', 'Chromatic orb', 'Dragons Breath', 'FireBall', 'Acid Splash'];
 const damage = [8, 10, 12, 14, 16, 18, 20];
-const outcome = ['You have missed', 'You have hit', 'Your spell has been successful', 'You have hit and defeated the enemy.', ];
+const outcome = ['You have missed', 'You have hit', 'Your spell has been successful', 'You have hit and defeated the enemy', ];
 
 //generates random numbers based on array length 
 const genRanNum = num =>{
@@ -9,8 +9,8 @@ const genRanNum = num =>{
 }
 //generates a spell
 const getSpell = () =>{
-    let randomNum = genRanNum(spells.length);
-    let chosenSpell = spells[randomNum];
+    const randomNum = genRanNum(spells.length);
+    const chosenSpell = spells[randomNum];
     console.log (chosenSpell);
     return chosenSpell;
 
@@ -30,7 +30,7 @@ const getOutcome = () =>{
 }
 
 function createMessage () {
-    let chosenSpell = getSpell();
+    const chosenSpell = getSpell();
     let spellMod = 1;
     switch (chosenSpell){
         case 'FireBolt':
@@ -53,15 +53,15 @@ function createMessage () {
             spellMod = 1;
 
     }
-    let damageDone = getDamage()* spellMod;
-    let theOutCome = getOutcome();
+    const damageDone = getDamage()* spellMod;
+    const theOutCome = getOutcome();
     if (theOutCome === 'You have missed'){
-        console.log (`${theOutCome}. The spell ${chosenSpell} did 0 damage to your enemy`)
-        document.getElementById("spell").innerHTML =`${theOutCome}. The spell ${chosenSpell} did 0 damage to your enemy`;
+        console.log (`${theOutCome}. The spell ${chosenSpell} did 0 damage to your enemy.`)
+        document.getElementById("spell").innerHTML =`${theOutCome}! The spell ${chosenSpell} did 0 damage to your enemy.`;
     }
     else {
         console.log (`${theOutCome}. The spell ${chosenSpell} did ${damageDone} damage.`)
-        document.getElementById("spell").innerHTML = `${theOutCome}. The spell ${chosenSpell} did ${damageDone} damage.`
+        document.getElementById("spell").innerHTML = `${theOutCome}! The spell ${chosenSpell} did ${damageDone} damage.`
 
     }
     
